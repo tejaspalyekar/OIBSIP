@@ -1,0 +1,332 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+* {
+
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+
+    }
+    
+    body {
+    
+    font-family: cursive;
+    
+    }
+    
+    a {
+    
+    text-decoration: none;
+    
+    }
+    
+    li {
+    
+    list-style: none;
+    
+    }
+    .navbar {
+
+        display: flex;
+        
+        align-items: center;
+        
+        justify-content: space-between;
+        
+        padding: 20px;
+        
+        background-color: rgb(27, 42, 46);
+        
+        color: #fff;
+        
+        }
+        
+        .nav-links a {
+        
+        color: #fff;
+        
+        }
+        
+        /* LOGO */
+        
+        .logo {
+        
+        font-size: 32px;
+        
+        }
+        
+        /* NAVBAR MENU */
+        
+        .menu {
+        
+        display: flex;
+        
+        gap: 1em;
+        
+        font-size: 18px;
+        
+        }
+        
+        .menu li:hover {
+        
+        background-color: #4c9e9e;
+        
+        border-radius: 5px;
+        
+        transition: 0.3s ease;
+        
+        }
+        
+        .menu li {
+        
+        padding: 5px 14px;
+        
+        }
+        
+        /* DROPDOWN MENU */
+        
+        .services {
+        
+        position: relative; 
+        
+        }
+        
+        .dropdown {
+        
+        background-color: rgb(79, 87, 92);
+        
+        padding: 1em 0;
+        
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        
+        display: none;
+        
+        border-radius: 8px;
+        
+        top: 35px;
+        
+        }
+        
+        .dropdown li + li {
+        
+        margin-top: 10px;
+        
+        }
+        
+        .dropdown li {
+        
+        padding: 0.5em 1em;
+        
+        width: 8em;
+        
+        text-align: center;
+        
+        }
+        
+
+        body {
+            margin:0;
+          }
+          
+          h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight:300;
+            letter-spacing: 2px;
+            font-size:48px;
+          }
+          p {
+            font-family: 'Lato', sans-serif;
+            letter-spacing: 1px;
+            font-size:14px;
+            color: #333333;
+          }
+          
+          .header {
+            position:relative;
+            text-align:center;
+            background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+            color:white;
+          }
+          .logo {
+            width:50px;
+            fill:white;
+            padding-right:15px;
+            display:inline-block;
+            vertical-align: middle;
+          }
+          
+          .inner-header {
+            height:65vh;
+            width:100%;
+            margin: 0;
+            padding-left: 50px;
+          }
+          
+          .flex { /*Flexbox for containers*/
+            display: flex;
+            justify-content:flex-end;
+            justify-content: space-around;
+            align-items: center;
+            text-align:start;
+          }
+         
+          
+          .waves {
+            position:relative;
+            width: 100%;
+            height:15vh;
+            margin-bottom:-30px; /*Fix for safari gap*/
+            min-height:150px;
+            max-height:200px;
+          }
+          
+          .content {
+            position:relative;
+            height:20vh;
+            text-align:center;
+            background-color: white;
+          }
+          
+          /* Animation */
+          
+          .parallax > use {
+            animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+          }
+          .parallax > use:nth-child(1) {
+            animation-delay: -2s;
+            animation-duration: 7s;
+          }
+          .parallax > use:nth-child(2) {
+            animation-delay: -3s;
+            animation-duration: 10s;
+          }
+          .parallax > use:nth-child(3) {
+            animation-delay: -4s;
+            animation-duration: 13s;
+          }
+          .parallax > use:nth-child(4) {
+            animation-delay: -5s;
+            animation-duration: 20s;
+          }
+          @keyframes move-forever {
+            0% {
+             transform: translate3d(-90px,0,0);
+            }
+            100% { 
+              transform: translate3d(85px,0,0);
+            }
+          }
+          /*Shrinking for mobile*/
+          @media (max-width: 768px) {
+            .waves {
+              height:40px;
+              min-height:40px;
+            }
+            .content {
+              height:30vh;
+            }
+            h1 {
+              font-size:24px;
+            }
+          }
+
+          .round-image {
+            width: 350px;
+            height: 350px;
+            background-image: url('photo.jpg');
+            background-size:contain;
+            background-position: 38px;
+            border-radius: 190px;
+            -webkit-border-radius: 190px;
+            -moz-border-radius: 190px;
+            border: 3px solid black;
+            
+           }
+           .about{
+            background-color: rgba(211, 13, 13, 0.911);
+            font-family:'Times New Roman', Times, serif;
+            margin-left: 80px;
+            color: #fcfcfc;
+            font-size: 30px;
+            border-radius: 30px;
+            -webkit-border-radius: 30px;
+            -moz-border-radius: 30px;
+            text-align: center;
+            padding: 10px;
+             
+            
+           }
+           .appdev{
+            padding-top: 20px;
+            font-size: 30px;
+            font-weight:bold;
+            color: rgb(255, 113, 57);
+           }
+           .whatsapp{
+            width: 40px;
+            height: 40px;
+            background-image: url('whatsapp.png');  
+            background-size:contain;
+            margin-right: 5px; 
+           }
+           .insta{
+            width: 40px;
+            height: 40px;
+            background-image: url('insta.png');  
+            background-size:contain;
+            margin-right: 5px;
+           }
+           .linkdine{
+            width: 40px;
+            height: 40px;
+            background-image: url('linkdine.png');  
+            background-size:contain;
+            margin-right: 5px;
+           }
+           .github{
+            width: 40px;
+            height: 40px;
+            background-image: url('git.png');  
+            background-size:contain;
+            margin-right: 5px;
+           }
+           .abouttable{
+            padding-top: 20px;
+            padding-left: 75px;
+            
+           }
+           * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .header {
+            text-align: center;
+            padding: 32px;
+          }
+          
+          .row {
+            display: -ms-flexbox; /* IE 10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE 10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+          }
+          
+          /* Create two equal columns that sits next to each other */
+          .column {
+            -ms-flex: 50%; /* IE 10 */
+            flex: 50%;
+            padding: 0 4px;
+          }
+          
+          .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+          }
+
